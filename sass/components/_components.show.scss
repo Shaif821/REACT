@@ -1,32 +1,34 @@
 $margin: 5px;
 
-.student {
-  background: #F59C00;
+.show {
+  border:1px solid darkorange;
+  background: black;
   width: 300px;
   min-height: 10px;
   margin-bottom: $margin;
-  color: white;
   padding: $margin;
   transition: ease-in-out 0.3s;
+  color: darkorange;
 
-  &__name {
-    display: inline;
+
+  &__locatie {
+    //display: inline;
     margin-right: $margin;
   }
 
-  &__age {
-    display: inline;
-    background: black;
+  &__vak {
+    //display: inline;
+    background: darkorange;
     padding: $margin;
   }
 
-  &__adress {
-    display: inline;
+  &__klas {
+    //display: inline;
     padding: $margin;
   }
 
   &:hover {
-    background: darkorange;
+    //background: ;
     transition: ease-in-out 0.3s;
   }
 

@@ -1,13 +1,14 @@
 $margin: 5px;
 
-.student {
-  background: #F59C00;
+.teacher {
+  background:  #35424B;
   width: 300px;
   min-height: 10px;
   margin-bottom: $margin;
   color: white;
   padding: $margin;
   transition: ease-in-out 0.3s;
+
 
   &__name {
     display: inline;
@@ -26,7 +27,7 @@ $margin: 5px;
   }
 
   &:hover {
-    background: darkorange;
+    background:  darkslategrey;
     transition: ease-in-out 0.3s;
   }
 

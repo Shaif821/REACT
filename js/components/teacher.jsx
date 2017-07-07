@@ -5,22 +5,28 @@ import React from 'react';
  * @param props
  * @returns {XML}
  */
-class Student extends React.Component {
+class Teacher extends React.Component {
 
     constructor(props) {
         super(props);
     }
 
+
+    onShow(){
+        this.props.onShow(this.props.name);
+    }
+
+
     render() {
         return (
-            <div className="student">
-                <div className="student__name">
+            <div className="teacher" onClick={() => this.onShow()}>
+                <div className="teacher__name">
                     {this.props.name}
                 </div>
-                <div className="student__age">
+                <div className="teacher__age">
                     {this.props.age}
                 </div>
-                <div className="student__adress">
+                <div className="teacher__adress">
                     {this.props.adress}
                 </div>
             </div>
@@ -29,4 +35,4 @@ class Student extends React.Component {
 
 }
 
-export default Student;
+export default Teacher;
