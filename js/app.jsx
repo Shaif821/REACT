@@ -26,6 +26,13 @@ class App extends React.Component {
             ]
         };
 
+
+    }
+
+    changeTitle() {
+        this.setState({
+                          title : 'test'
+                      });
     }
 
 
@@ -63,6 +70,7 @@ class App extends React.Component {
                     age=""
                     adress=""
                 />
+
 
             </div>
         );

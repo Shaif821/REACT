@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * Student component
+ * Teacher component
  * @param props
  * @returns {XML}
  */
@@ -11,9 +11,16 @@ class Student extends React.Component {
         super(props);
     }
 
+    onClick(){
+        this.props.onSelect();
+    }
+
     render() {
         return (
-            <div className="student">
+            <div
+                className="student"
+                onClick={() => this.onClick()}
+            >
                 <div className="student__name">
                     {this.props.name}
                 </div>
@@ -22,6 +29,9 @@ class Student extends React.Component {
                 </div>
                 <div className="student__adress">
                     {this.props.adress}
+                </div>
+                <div className="student__delete">
+                    x
                 </div>
             </div>
         );

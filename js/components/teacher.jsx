@@ -11,7 +11,6 @@ class Teacher extends React.Component {
         super(props);
     }
 
-
     onShow(){
         this.props.onShow(this.props.name);
     }

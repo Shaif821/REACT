@@ -8,6 +8,7 @@ $margin: 5px;
   color: white;
   padding: $margin;
   transition: ease-in-out 0.3s;
+  position: relative;
 
   &__name {
     display: inline;
@@ -20,14 +21,19 @@ $margin: 5px;
     padding: $margin;
   }
 
+
   &__adress {
     display: inline;
     padding: $margin;
   }
-
-  &:hover {
-    background: darkorange;
-    transition: ease-in-out 0.3s;
+  &__delete {
+    position: absolute;
+    padding: $margin;
+    display: inline;
+    top: 0px;
+    right:0px;
+    cursor: pointer;
+    background: red;
   }
 
 }
